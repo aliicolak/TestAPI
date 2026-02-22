@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace TestAPI.Controllers;
 
@@ -28,5 +28,13 @@ public class WeatherForecastController : ControllerBase
             Summary = Summaries[Random.Shared.Next(Summaries.Length)]
         })
         .ToArray();
+    }
+    [HttpPost]
+    public string AlperinaminaCakayimMi(int secim)
+    {
+        if (secim == 0) return "Çakma";
+        if (secim == 1) return "Çak";
+
+        return string.Empty; // Veya bir hata fırlat (Throw Exception)
     }
 }
