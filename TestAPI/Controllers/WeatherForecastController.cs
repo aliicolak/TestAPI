@@ -32,7 +32,7 @@ public class WeatherForecastController : ControllerBase
     [HttpPost]
     public string AlperinaminaCakayimMi(int secim)
     {
-        if (secim == 0) return "Çakma";
+        if (secim == 0) return "Çakma";    
         if (secim == 1) return "Çak";
 
         return string.Empty; // Veya bir hata fırlat (Throw Exception)
