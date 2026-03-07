@@ -30,7 +30,7 @@ public class WeatherForecastController : ControllerBase
         .ToArray();
     }
     [HttpPost]
-    public string AlperinaminaCakayimMi(int secim)
+    public string AlperinaminaCakayimMi(int secim) 
     {
         if (secim == 0) return "Çakma";    
         if (secim == 1) return "Çak";     
